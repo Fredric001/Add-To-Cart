@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add to cart</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <button class="cart-button">
+        <span class="add-to-cart">Add to cart</span>
+        <span class="added">Added</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-box"></i>
+      </button>
+      
+      
+
+
+        <script>
+            let cartButtons = document.querySelectorAll('.cart-button');
+
+cartButtons.forEach(button => {
+  button.addEventListener('click', cartClick);
+});
+
+function cartClick() {
+  let button = this;
+  button.classList.add('clicked');
+}
+        </script>
+
+
+</body>
+</html>
